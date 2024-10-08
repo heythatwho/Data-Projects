@@ -1,0 +1,27 @@
+Metric Selection:
+Conversion rate is chosen as the primary metric for this A/B test. This measures the proportion of visitors who make a purchase.
+
+Randomization Units:
+Each visitor is randomly assigned to either the control or test group.
+
+Target Population:
+The visitors to the e-commerce site are the test population, ensuring bots or non-human traffic are excluded.
+
+Sample Size Calculation:
+Using statsmodels’ power analysis, we compute the sample size needed to detect the expected effect, accounting for the effect size, significance level (α), and power (1 - β).
+
+Test Duration:
+With daily traffic and required sample size, we estimate the test duration.
+
+Statistical Testing:
+We apply a Z-test for statistical significance, calculating the Z-statistic and P-value to determine whether the observed difference between the groups is significant.
+
+Visualization:
+A bar chart visualizes the conversion rate for both control and test groups.
+
+Alternatives to A/B Testing:
+If A/B testing is impractical, alternatives include:
+
+Multi-Armed Bandit: Optimize tests in real-time.
+Quasi-Experiments: Use observational data.
+Simulations: Model different potential outcomes without running a live test.
